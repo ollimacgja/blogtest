@@ -1,0 +1,17 @@
+<div style="background-color: #AAA"><p>
+  <b>Commenter:</b>
+  <%= comment.commenter %>
+</p>
+ 
+<p>
+  <b>Comment:</b>
+  <%= comment.body %>
+</p>
+
+<p>
+  <%= link_to 'Apagar Comentário', [comment.post, comment],
+               :confirm => 'Está certo disso?',
+               :method => :delete %>
+</p>
+
+</div>
